@@ -1,0 +1,22 @@
+{
+  "name": "windmill-theme",
+  "version": "0.1.0",
+  "description": "An extensible wordpress theme for developers and designers",
+  "keywords": [
+    "wordpress",
+    "wordpress-theme"
+  ],
+  "homepage": "https://github.com/maxcaplan/windmill-theme#readme",
+  "bugs": {
+    "url": "https://github.com/maxcaplan/windmill-theme/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxcaplan/windmill-theme.git"
+  },
+  "license": "GPL-3.0",
+  "author": "Max Caplan",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
