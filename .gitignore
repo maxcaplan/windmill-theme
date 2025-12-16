@@ -25,3 +25,5 @@ test.lib/
 
 # JetBrains IDEs
 .idea/
+
+/vendor/
