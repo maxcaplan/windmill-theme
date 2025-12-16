@@ -26,4 +26,7 @@ test.lib/
 # JetBrains IDEs
 .idea/
 
+# Neovim configs
+.phpactor.json
+
 /vendor/

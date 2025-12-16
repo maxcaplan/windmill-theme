@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<ruleset name="WordPress Coding Standards" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="https://schema.phpcodesniffer.com/phpcs.xsd">
+	<description>WordPress Coding Standards</description>
+
+	<!-- Sniff theme files -->
+	<file>.</file>
+
+	<!-- Exclude files and directories -->
+	<exclude-pattern>*/vendor/*</exclude-pattern>
+	<exclude-pattern>*/.git/*</exclude-pattern>
+	<exclude-pattern>*/node_modules/*</exclude-pattern>
+
+	<!-- Wordpress sniffs -->
+	<rule ref="WordPress" />
+
+	<!-- Extra WordPress sniffs -->
+	<rule ref="WordPress-Extra">
+		<exclude name="WordPress.Files.FileName" />
+		<exclude name="WordPress.NamingConventions.ValidVariableName" />
+		<exclude name="WordPress.CodeAnalysis.AssignmentInCondition.FoundInWhileCondition" />
+		<exclude name="WordPress.WP.AlternativeFunctions" />
+		<exclude name="Generic.Arrays.DisallowShortArraySyntax" />
+	</rule>
+
+	<!-- Ensure proper text domain is set for i18n -->
+	<rule ref="WordPress.WP.I18n">
+		<properties>
+			<property name="text_domain" type="array">
+				<element value="windmill-theme" />
+			</property>
+		</properties>
+	</rule>
+
+	<!-- Ensure all globals are prefixed correctly -->
+	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
+		<properties>
+			<property name="prefixes" type="array">
+				<element value="windmilltheme" />
+				<element value="WindmillTheme" />
+			</property>
+		</properties>
+	</rule>
+
+	<!-- Ensure the minimum WordPress version is used -->
+	<rule ref="WordPress.WP.DeprecatedFunctions">
+		<properties>
+			<property name="minimum_wp_version" value="6.9" />
+		</properties>
+	</rule>
+
+	<!-- Allow file name exceptions for theme files -->
+	<rule ref="WordPress.Files.FileName">
+		<properties>
+			<property name="is_theme" value="true" />
+		</properties>
+	</rule>
+
+	<!-- Ensure capabilities are used correctly -->
+	<rule ref="WordPress.WP.Capabilities" />
+
+	<!-- Ensure php version compatibility -->
+	<config name="testVersion" value="8.2-" />
+	<rule ref="PHPCompatibilityWP" />
+</ruleset>
