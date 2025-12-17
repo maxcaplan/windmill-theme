@@ -10,3 +10,5 @@
  */
 
 namespace WindmillTheme;
+
+require __DIR__ . '/includes/setup/index.php';
