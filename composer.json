@@ -28,7 +28,7 @@
 		}
 	},
 	"require-dev": {
-		"php-stubs/wordpress-stubs": "^6.9",
+		"php-stubs/wordpress-stubs": "dev-master",
 		"wp-coding-standards/wpcs": "^3.0",
 		"phpcompatibility/phpcompatibility-wp": "^2.1",
 		"squizlabs/php_codesniffer": "^3.13"

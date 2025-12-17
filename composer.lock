@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "154d404677d2770535f39ce316aeaf68",
+    "content-hash": "a8052463f145c447b04df40fabb6bbcd",
     "packages": [
         {
             "name": "composer/installers",
@@ -252,16 +252,16 @@
         },
         {
             "name": "php-stubs/wordpress-stubs",
-            "version": "v6.9.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-stubs/wordpress-stubs.git",
-                "reference": "5171cb6650e6c583a96943fd6ea0dfa3e1089a8a"
+                "reference": "d6f513244441554f34e276925cb29cc0d3daf8d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-stubs/wordpress-stubs/zipball/5171cb6650e6c583a96943fd6ea0dfa3e1089a8a",
-                "reference": "5171cb6650e6c583a96943fd6ea0dfa3e1089a8a",
+                "url": "https://api.github.com/repos/php-stubs/wordpress-stubs/zipball/d6f513244441554f34e276925cb29cc0d3daf8d3",
+                "reference": "d6f513244441554f34e276925cb29cc0d3daf8d3",
                 "shasum": ""
             },
             "conflict": {
@@ -283,6 +283,7 @@
                 "symfony/polyfill-php80": "Symfony polyfill backporting some PHP 8.0+ features to lower PHP versions",
                 "szepeviktor/phpstan-wordpress": "WordPress extensions for PHPStan"
             },
+            "default-branch": true,
             "type": "library",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -297,9 +298,9 @@
             ],
             "support": {
                 "issues": "https://github.com/php-stubs/wordpress-stubs/issues",
-                "source": "https://github.com/php-stubs/wordpress-stubs/tree/v6.9.0"
+                "source": "https://github.com/php-stubs/wordpress-stubs/tree/master"
             },
-            "time": "2025-12-03T23:06:24+00:00"
+            "time": "2025-12-08T08:22:45+00:00"
         },
         {
             "name": "phpcompatibility/php-compatibility",
@@ -837,7 +838,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {},
+    "stability-flags": {
+        "php-stubs/wordpress-stubs": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
