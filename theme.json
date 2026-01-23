@@ -15,47 +15,47 @@
 			"radiusSizes": [
 				{
 					"name": "3X Small",
-					"size": "var(--wp--preset--spacing--10)",
+					"size": "var:preset|spacing|10",
 					"slug": "10"
 				},
 				{
 					"name": "2X Small",
-					"size": "var(--wp--preset--spacing--20)",
+					"size": "var:preset|spacing|20",
 					"slug": "20"
 				},
 				{
 					"name": "X Small",
-					"size": "var(--wp--preset--spacing--30)",
+					"size": "var:preset|spacing|30",
 					"slug": "30"
 				},
 				{
 					"name": "Small",
-					"size": "var(--wp--preset--spacing--40)",
+					"size": "var:preset|spacing|40",
 					"slug": "40"
 				},
 				{
 					"name": "Medium",
-					"size": "var(--wp--preset--spacing--50)",
+					"size": "var:preset|spacing|50",
 					"slug": "50"
 				},
 				{
 					"name": "Large",
-					"size": "var(--wp--preset--spacing--60)",
+					"size": "var:preset|spacing|60",
 					"slug": "60"
 				},
 				{
 					"name": "X Large",
-					"size": "var(--wp--preset--spacing--70)",
+					"size": "var:preset|spacing|70",
 					"slug": "70"
 				},
 				{
 					"name": "2X Large",
-					"size": "var(--wp--preset--spacing--80)",
+					"size": "var:preset|spacing|80",
 					"slug": "80"
 				},
 				{
 					"name": "3X Large",
-					"size": "var(--wp--preset--spacing--90)",
+					"size": "var:preset|spacing|90",
 					"slug": "90"
 				}
 			]
@@ -87,77 +87,77 @@
 				},
 				{
 					"name": "Primary",
-					"color": "var(--wp--custom--blue--700)",
+					"color": "var:custom|blue|700",
 					"slug": "primary"
 				},
 				{
 					"name": "Primary Light",
-					"color": "var(--wp--custom--blue--400)",
+					"color": "var:custom|blue|400",
 					"slug": "primary"
 				},
 				{
 					"name": "Primary Dark",
-					"color": "var(--wp--custom--blue--800)",
+					"color": "var:custom|blue|800",
 					"slug": "primary"
 				},
 				{
 					"name": "Secondary",
-					"color": "var(--wp--custom--purple--500)",
+					"color": "var:custom|purple|500",
 					"slug": "secondary"
 				},
 				{
 					"name": "Secondary Light",
-					"color": "var(--wp--custom--purple--300)",
+					"color": "var:custom|purple|300",
 					"slug": "secondary"
 				},
 				{
 					"name": "Secondary Dark",
-					"color": "var(--wp--custom--purple--700)",
+					"color": "var:custom|purple|700",
 					"slug": "secondary"
 				},
 				{
 					"name": "Error",
-					"color": "var(--wp--custom--red--700)",
+					"color": "var:custom|red|700",
 					"slug": "error"
 				},
 				{
 					"name": "Error Light",
-					"color": "var(--wp--custom--red--400)",
+					"color": "var:custom|red|400",
 					"slug": "error"
 				},
 				{
 					"name": "Error Dark",
-					"color": "var(--wp--custom--red--800)",
+					"color": "var:custom|red|800",
 					"slug": "error"
 				},
 				{
 					"name": "Info",
-					"color": "var(--wp--custom--light-blue--700)",
+					"color": "var:custom|light-blue|700",
 					"slug": "info"
 				},
 				{
 					"name": "Info Light",
-					"color": "var(--wp--custom--light-blue--500)",
+					"color": "var:custom|light-blue|500",
 					"slug": "info"
 				},
 				{
 					"name": "Info Dark",
-					"color": "var(--wp--custom--light-blue--900)",
+					"color": "var:custom|light-blue|900",
 					"slug": "info"
 				},
 				{
 					"name": "Success",
-					"color": "var(--wp--custom--green--800)",
+					"color": "var:custom|green|800",
 					"slug": "success"
 				},
 				{
 					"name": "Success Light",
-					"color": "var(--wp--custom--green--500)",
+					"color": "var:custom|green|500",
 					"slug": "success"
 				},
 				{
 					"name": "Success Dark",
-					"color": "var(--wp--custom--green--900)",
+					"color": "var:custom|green|900",
 					"slug": "success"
 				},
 				{
@@ -167,62 +167,62 @@
 				},
 				{
 					"name": "Warning Light",
-					"color": "var(--wp--custom--orange--500)",
+					"color": "var:custom|orange|500",
 					"slug": "warning"
 				},
 				{
 					"name": "Warning Dark",
-					"color": "var(--wp--custom--orange--900)",
+					"color": "var:custom|orange|900",
 					"slug": "warning"
 				},
 				{
 					"name": "Grey 50",
-					"color": "var(--wp--custom--grey--50)",
+					"color": "var:custom|grey|50",
 					"slug": "grey-50"
 				},
 				{
 					"name": "Grey 100",
-					"color": "var(--wp--custom--grey--100)",
+					"color": "var:custom|grey|100",
 					"slug": "grey-100"
 				},
 				{
 					"name": "Grey 200",
-					"color": "var(--wp--custom--grey--200)",
+					"color": "var:custom|grey|200",
 					"slug": "grey-200"
 				},
 				{
 					"name": "Grey 300",
-					"color": "var(--wp--custom--grey--300)",
+					"color": "var:custom|grey|300",
 					"slug": "grey-300"
 				},
 				{
 					"name": "Grey 400",
-					"color": "var(--wp--custom--grey--400)",
+					"color": "var:custom|grey|400",
 					"slug": "grey-400"
 				},
 				{
 					"name": "Grey 500",
-					"color": "var(--wp--custom--grey--500)",
+					"color": "var:custom|grey|500",
 					"slug": "grey-500"
 				},
 				{
 					"name": "Grey 600",
-					"color": "var(--wp--custom--grey--600)",
+					"color": "var:custom|grey|600",
 					"slug": "grey-600"
 				},
 				{
 					"name": "Grey 700",
-					"color": "var(--wp--custom--grey--700)",
+					"color": "var:custom|grey|700",
 					"slug": "grey-700"
 				},
 				{
 					"name": "Grey 800",
-					"color": "var(--wp--custom--grey--800)",
+					"color": "var:custom|grey|800",
 					"slug": "grey-800"
 				},
 				{
 					"name": "Grey 900",
-					"color": "var(--wp--custom--grey--900)",
+					"color": "var:custom|grey|900",
 					"slug": "grey-900"
 				}
 			],
@@ -357,21 +357,6 @@
 			],
 			"fontFamilies": [
 				{
-					"name": "Manrope",
-					"slug": "manrope",
-					"fontFamily": "Manrope, sans-serif",
-					"fontFace": [
-						{
-							"src": [
-								"file:./assets/fonts/manrope/Manrope-VariableFont_wght.woff2"
-							],
-							"fontWeight": "200 800",
-							"fontStyle": "normal",
-							"fontFamily": "Manrope"
-						}
-					]
-				},
-				{
 					"name": "Fira Code",
 					"slug": "fira-code",
 					"fontFamily": "\"Fira Code\", monospace",
@@ -383,6 +368,141 @@
 							"fontWeight": "300 700",
 							"fontStyle": "normal",
 							"fontFamily": "\"Fira Code\""
+						}
+					]
+				},
+				{
+					"name": "Fira Sans",
+					"slug": "fira-sans",
+					"fontFamily": "\"Fira Sans\", sans-serif",
+					"fontFace": [
+						{
+							"src": ["file:./assets/fonts/fira-sans/FiraSans-Thin.woff2"],
+							"fontWeight": "100",
+							"fontStyle": "normal",
+							"fontFamily": "\"Fira Sans\""
+						},
+						{
+							"src": [
+								"file:./assets/fonts/fira-sans/FiraSans-ExtraLight.woff2"
+							],
+							"fontWeight": "200",
+							"fontStyle": "normal",
+							"fontFamily": "\"Fira Sans\""
+						},
+						{
+							"src": ["file:./assets/fonts/fira-sans/FiraSans-Light.woff2"],
+							"fontWeight": "300",
+							"fontStyle": "normal",
+							"fontFamily": "\"Fira Sans\""
+						},
+						{
+							"src": ["file:./assets/fonts/fira-sans/FiraSans-Regular.woff2"],
+							"fontWeight": "400",
+							"fontStyle": "normal",
+							"fontFamily": "\"Fira Sans\""
+						},
+						{
+							"src": ["file:./assets/fonts/fira-sans/FiraSans-Medium.woff2"],
+							"fontWeight": "500",
+							"fontStyle": "normal",
+							"fontFamily": "\"Fira Sans\""
+						},
+						{
+							"src": ["file:./assets/fonts/fira-sans/FiraSans-SemiBold.woff2"],
+							"fontWeight": "600",
+							"fontStyle": "normal",
+							"fontFamily": "\"Fira Sans\""
+						},
+						{
+							"src": ["file:./assets/fonts/fira-sans/FiraSans-Bold.woff2"],
+							"fontWeight": "700",
+							"fontStyle": "normal",
+							"fontFamily": "\"Fira Sans\""
+						},
+						{
+							"src": ["file:./assets/fonts/fira-sans/FiraSans-ExtraBold.woff2"],
+							"fontWeight": "800",
+							"fontStyle": "normal",
+							"fontFamily": "\"Fira Sans\""
+						},
+						{
+							"src": ["file:./assets/fonts/fira-sans/FiraSans-Black.woff2"],
+							"fontWeight": "900",
+							"fontStyle": "normal",
+							"fontFamily": "\"Fira Sans\""
+						},
+						{
+							"src": [
+								"file:./assets/fonts/fira-sans/FiraSans-ThinItalic.woff2"
+							],
+							"fontWeight": "100",
+							"fontStyle": "italic",
+							"fontFamily": "\"Fira Sans\""
+						},
+						{
+							"src": [
+								"file:./assets/fonts/fira-sans/FiraSans-ExtraLightItalic.woff2"
+							],
+							"fontWeight": "200",
+							"fontStyle": "italic",
+							"fontFamily": "\"Fira Sans\""
+						},
+						{
+							"src": [
+								"file:./assets/fonts/fira-sans/FiraSans-LightItalic.woff2"
+							],
+							"fontWeight": "300",
+							"fontStyle": "italic",
+							"fontFamily": "\"Fira Sans\""
+						},
+						{
+							"src": [
+								"file:./assets/fonts/fira-sans/FiraSans-RegularItalic.woff2"
+							],
+							"fontWeight": "400",
+							"fontStyle": "italic",
+							"fontFamily": "\"Fira Sans\""
+						},
+						{
+							"src": [
+								"file:./assets/fonts/fira-sans/FiraSans-MediumItalic.woff2"
+							],
+							"fontWeight": "500",
+							"fontStyle": "italic",
+							"fontFamily": "\"Fira Sans\""
+						},
+						{
+							"src": [
+								"file:./assets/fonts/fira-sans/FiraSans-SemiBoldItalic.woff2"
+							],
+							"fontWeight": "600",
+							"fontStyle": "italic",
+							"fontFamily": "\"Fira Sans\""
+						},
+						{
+							"src": [
+								"file:./assets/fonts/fira-sans/FiraSans-BoldItalic.woff2"
+							],
+							"fontWeight": "700",
+							"fontStyle": "italic",
+							"fontFamily": "\"Fira Sans\""
+						},
+						{
+							"src": [
+								"file:./assets/fonts/fira-sans/FiraSans-ExtraBoldItalic.woff2"
+							],
+							"fontWeight": "800",
+							"fontStyle": "italic",
+							"fontFamily": "\"Fira Sans\""
+						},
+						{
+							"src": [
+								"file:./assets/fonts/fira-sans/FiraSans-BlackItalic.woff2"
+							],
+							"fontWeight": "900",
+							"fontStyle": "italic",
+							"fontFamily": "\"Fira Sans\""
 						}
 					]
 				}
