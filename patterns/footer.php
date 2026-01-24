@@ -9,7 +9,6 @@
  * @package windmill-theme
  */
 
-// Use site logo if set, otherwise use site title.
 ?>
 
 <!-- wp:group {"metadata":{"name":"Footer"},"style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}}},"layout":{"type":"constrained"}} -->
