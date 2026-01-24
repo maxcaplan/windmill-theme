@@ -21,7 +21,7 @@
 
 			<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"right"}} -->
 			<div class="wp-block-group">
-				<!-- wp:navigation {"overlayBackgroundColor":"base","overlayTextColor":"contrast","layout":{"type":"flex","justifyContent":"right","flexWrap":"wrap"}} /-->
+				<!-- wp:navigation {"ref":4,"layout":{"type":"flex","justifyContent":"right"}} /-->
 			</div>
 			<!-- /wp:group -->
 		</div>

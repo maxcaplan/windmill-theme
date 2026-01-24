@@ -37,6 +37,19 @@ function setup_theme_supports() {
 }
 
 /**
+ * Register block styles for the theme
+ */
+function register_theme_block_styles() {
+	register_block_style(
+		'core/list',
+		array(
+			'name'  => 'checkmark-list',
+			'label' => __( 'Checkmark', 'windmill-theme' ),
+		)
+	);
+}
+
+/**
  * Theme setup hook
  */
 function setup() {
@@ -47,5 +60,15 @@ function setup() {
 	add_editor_style( 'assets/css/editor-styles.css' );
 }
 
+/**
+ * Theme init hook
+ */
+function init() {
+	register_theme_block_styles();
+}
+
 // Attach theme setup hook.
 add_action( 'after_setup_theme', __NAMESPACE__ . '\setup' );
+
+// Attach theme init hook.
+add_action( 'init', __NAMESPACE__ . '\init' );
