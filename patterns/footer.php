@@ -10,46 +10,44 @@
  */
 
 // Use site logo if set, otherwise use site title.
-$wm_theme_site_info = has_custom_logo() ? '<!-- wp:site-logo {"width":200} /-->' : '<!-- wp:site-title {"level":2} /-->';
 ?>
 
-<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}},"border":{"top":{"width":"1px","color":"var:preset|color|grey-500"},"right":{"width":"0px","style":"none"},"bottom":{"width":"0px","style":"none"},"left":{"width":"0px","style":"none"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group" style="border-top-color:var(--wp--preset--color--grey-500);border-top-width:1px;border-right-style:none;border-right-width:0px;border-bottom-style:none;border-bottom-width:0px;border-left-style:none;border-left-width:0px;padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50)">
-	<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|60"}},"layout":{"type":"default"}} -->
+<!-- wp:group {"metadata":{"name":"Footer"},"style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50)">
+	<!-- wp:group {"metadata":{"name":"Body"},"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|60"}},"layout":{"type":"default"}} -->
 	<div class="wp-block-group alignwide">
-
-		<!-- wp:group {"align":"full","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"top"}} -->
-		<div class="wp-block-group alignfull">
-			<!-- wp:columns -->
-			<div class="wp-block-columns">
-				<!-- wp:column {"width":"100%"} -->
-				<div class="wp-block-column" style="flex-basis:100%">
-					<?php
-						echo has_custom_logo() ?
-						'<!-- wp:site-logo {"width":200} /-->' : '
-						<!-- wp:site-title {"level":2,"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"x-large"} /-->';
-					?>
+		<!-- wp:columns -->
+		<div class="wp-block-columns">
+			<!-- wp:column {"layout":{"type":"default"}} -->
+			<div class="wp-block-column">
+				<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical"}} -->
+				<div class="wp-block-group">
+					<!-- wp:site-title /-->
 
 					<!-- wp:site-tagline /-->
 				</div>
-				<!-- /wp:column -->
-
-				<!-- wp:column {"width":""} -->
-				<div class="wp-block-column">
-					<!-- wp:spacer {"height":"var:preset|spacing|40","width":"0px"} -->
-					<div style="height:var(--wp--preset--spacing--40);width:0px" aria-hidden="true" class="wp-block-spacer"></div>
-					<!-- /wp:spacer -->
-				</div>
-				<!-- /wp:column -->
+				<!-- /wp:group -->
 			</div>
-			<!-- /wp:columns -->
+			<!-- /wp:column -->
 
-			<!-- wp:navigation {"ref":4,"overlayMenu":"never","overlayBackgroundColor":"base","overlayTextColor":"contrast","layout":{"type":"flex","justifyContent":"right","flexWrap":"wrap"}} /-->
+			<!-- wp:column {"width":"0px"} -->
+			<div class="wp-block-column" style="flex-basis:0px">
+				<!-- wp:spacer {"height":"var:preset|spacing|40"} -->
+				<div style="height:var(--wp--preset--spacing--40)" aria-hidden="true" class="wp-block-spacer"></div>
+				<!-- /wp:spacer -->
+			</div>
+			<!-- /wp:column -->
+
+			<!-- wp:column {"layout":{"type":"default"}} -->
+			<div class="wp-block-column">
+				<!-- wp:navigation {"ref":4,"overlayMenu":"never","overlayBackgroundColor":"base","overlayTextColor":"contrast","style":{"layout":{"selfStretch":"fill","flexSize":null}},"layout":{"type":"flex","justifyContent":"right","flexWrap":"wrap","orientation":"vertical"}} /-->
+			</div>
+			<!-- /wp:column -->
 		</div>
-		<!-- /wp:group -->
+		<!-- /wp:columns -->
 
-		<!-- wp:group {"align":"full","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
-		<div class="wp-block-group alignfull">
+		<!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+		<div class="wp-block-group">
 			<!-- wp:paragraph {"fontSize":"small"} -->
 			<p class="has-small-font-size">
 				<?php esc_html_e( 'Windmill Theme', 'windmill-theme' ); ?>
@@ -59,29 +57,21 @@ $wm_theme_site_info = has_custom_logo() ? '<!-- wp:site-logo {"width":200} /-->'
 			<!-- wp:paragraph {"fontSize":"small"} -->
 			<p class="has-small-font-size">
 				<?php
-					printf(
-						/* translators: Copyleft &#127279; 20XX. %s: Current year */
-						esc_html__( 'Copyleft &#127279; %s', 'windmill-theme' ),
-						esc_html( current_datetime()->format( 'Y' ) )
-					);
-					?>
+				printf(
+					/* translators: Copyleft &#127279; 20XX Max Caplan. %1$s: Current year, %2$s: Max Caplan link. */
+					esc_html__( 'Copyleft &#127279; %1$s %2$s', 'windmill-theme' ),
+					esc_html( current_datetime()->format( 'Y' ) ),
+					'<a href="' . esc_url( __( 'https://maxcaplan.com', 'windmill-theme' ) ) . '" rel="nofollow" target="_blank">Max Caplan</a>'
+				);
+				?>
 			</p>
 			<!-- /wp:paragraph -->
 
-			<!-- wp:paragraph {"fontSize":"small"} -->
-			<p class="has-small-font-size">
-				<?php
-					printf(
-						/* translators: Created with <3 by Max Caplan. %s: Max Caplan link. */
-						esc_html__( 'Created with <3 by %s', 'windmill-theme' ),
-						'<a href="' . esc_url( __( 'https://maxcaplan.com', 'windmill-theme' ) ) . '" rel="nofollow" target="_blank">Max Caplan</a>'
-					);
-					?>
-			</p>
-			<!-- /wp:paragraph -->
 		</div>
 		<!-- /wp:group -->
+
 	</div>
 	<!-- /wp:group -->
+
 </div>
 <!-- /wp:group -->
