@@ -32,6 +32,9 @@ function setup_theme_supports() {
 			'video',
 		)
 	);
+
+	// Remove core block pattern library.
+	remove_theme_support( 'core-block-patterns' );
 }
 
 /**
