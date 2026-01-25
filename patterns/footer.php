@@ -6,7 +6,7 @@
  * Block Types: core/template-part/footer
  * Description: Footer columns with logo, title, tagline and links.
  *
- * @package windmill-theme
+ * @package WindmillTheme
  */
 
 ?>

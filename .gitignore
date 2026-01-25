@@ -20,6 +20,12 @@ dist
 tsconfig.tsbuildinfo
 test.lib/
 
+# Composer
+vendor/
+
+# Theme
+build/
+
 # Visual Studio Code configs
 .vscode/
 
@@ -28,5 +34,3 @@ test.lib/
 
 # Neovim configs
 .phpactor.json
-
-/vendor/

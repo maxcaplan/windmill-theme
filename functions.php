@@ -4,11 +4,15 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package windmill-theme
+ * @package WindmillTheme
  * @author Max Caplan
  * @license GNU General Public License v3
  */
 
 namespace WindmillTheme;
 
-require __DIR__ . '/includes/setup/index.php';
+// Setup theme.
+require_once get_template_directory() . '/incs/setup.php';
+
+// Enqueue theme scripts and files.
+require_once get_template_directory() . '/incs/enqueue/index.php';

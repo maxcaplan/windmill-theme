@@ -1,4 +1,6 @@
-/* === GLOBAL === */
+/*
+ * Global styles
+ */
 
 /*
  * Link styles
@@ -68,18 +70,4 @@ p {
  */
 :where(pre) {
 	overflow-x: auto;
-}
-
-/* === BLOCKS === */
-
-/**
- * List Block checkmark block style
- */
-
-.wp-block-list.is-style-checkmark-list {
-	list-style-type: "\2713";
-}
-
-.wp-block-list.is-style-checkmark-list li {
-	padding-inline-start: 1ch;
 }
