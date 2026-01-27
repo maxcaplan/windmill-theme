@@ -1,10 +1,42 @@
-const defaultConfig = require("@wordpress/scripts/config/webpack.config");
+const defaultConfig = require('@wordpress/scripts/config/webpack.config');
 
 // Plugins
-const RemoveEmptyScriptsPlugin = require("webpack-remove-empty-scripts");
+const RemoveEmptyScriptsPlugin = require('webpack-remove-empty-scripts');
 
 // Utils
-const path = require("path");
+const path = require('path');
+const glob = require('glob');
+
+/**
+ * Get entries for all files in a directory
+ * @param {string} dir - Directory to get entries for
+ * @param {string|undefined} file_type - Optionally, file type to match in dir
+ * @param {string|undefined} out_dir - Optional output directory for entries
+ * @param {boolean} skip_partial - Skip files starting with `_`
+ */
+const getDirEntries = (dir, file_type, out_dir, skip_partial = true) => {
+	const abs_dir = path.resolve(
+		process.cwd(),
+		dir,
+		file_type !== undefined ? `*.${file_type}` : '*'
+	);
+	return glob.sync(abs_dir).reduce((acc, file_path) => {
+		const file_ext = path.extname(file_path);
+		const file_name = path.basename(file_path, file_ext);
+
+		// Skip partials
+		if (skip_partial && file_name.slice(0, 1) === '_') {
+			return acc;
+		}
+
+		const out_path =
+			out_dir !== undefined
+				? `${out_dir}/${file_name}`
+				: `css/blocks/${file_name}`;
+		acc[out_path] = file_path;
+		return acc;
+	}, {});
+};
 
 // Extend wordpress default webpack config
 module.exports = {
@@ -12,14 +44,19 @@ module.exports = {
 	...{
 		// Set custom entry points for js and scss
 		entry: {
-			"js/main": path.resolve(process.cwd(), "src/js", "main.js"),
-			"js/editor": path.resolve(process.cwd(), "src/js", "editor.js"),
-			"css/main": path.resolve(process.cwd(), "src/scss", "main.scss"),
-			"css/editor": path.resolve(
+			// Include wordpress default entries
+			...defaultConfig.entries,
+
+			'js/main': path.resolve(process.cwd(), 'src/js', 'main.js'),
+			'js/editor': path.resolve(process.cwd(), 'src/js', 'editor.js'),
+			'css/main': path.resolve(process.cwd(), 'src/scss', 'main.scss'),
+			'css/editor': path.resolve(
 				process.cwd(),
-				"src/scss",
-				"editor.scss",
+				'src/scss',
+				'editor.scss'
 			),
+			// Get entries for core block styles
+			...getDirEntries('src/scss/blocks/core', 'scss', 'css/blocks/core'),
 		},
 		// Add webpack plugins
 		plugins: [

@@ -18,12 +18,14 @@
 	"author": "Max Caplan",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"start": "wp-scripts start",
-		"build": "wp-scripts build",
+		"start": "wp-scripts start --webpack-src-dir=src --output-path=build",
+		"build": "wp-scripts build --webpack-src-dir=src --output-path=build",
 		"prepare": "husky"
 	},
 	"devDependencies": {
+		"@wordpress/prettier-config": "^4.38.0",
 		"@wordpress/scripts": "^31.3.0",
+		"glob": "^13.0.0",
 		"husky": "^9.1.7",
 		"lint-staged": "^16.2.7",
 		"path": "^0.12.7",
