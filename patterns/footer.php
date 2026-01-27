@@ -11,26 +11,32 @@
 
 ?>
 
-<!-- wp:group {"metadata":{"name":"Footer"},"style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50)">
+<!-- wp:group {"metadata":{"name":"Footer"},"style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}},"border":{"bottom":{},"top":{"color":"var:preset|color|grey-400","width":"1px"},"right":{},"left":{}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);border-top-color:var(--wp--preset--color--grey-400);border-top-width:1px;">
 	<!-- wp:group {"metadata":{"name":"Body"},"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|60"}},"layout":{"type":"default"}} -->
 	<div class="wp-block-group alignwide">
 		<!-- wp:columns -->
 		<div class="wp-block-columns">
 			<!-- wp:column {"layout":{"type":"default"}} -->
 			<div class="wp-block-column">
-				<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical"}} -->
+				<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|60"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch", "flexWrap":"nowrap"}} -->
 				<div class="wp-block-group">
-					<!-- wp:site-title /-->
+					<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical"}} -->
+					<div class="wp-block-group">
+						<!-- wp:site-title /-->
 
-					<!-- wp:site-tagline /-->
+						<!-- wp:site-tagline /-->
+					</div>
+					<!-- /wp:group -->
+
+					<!-- wp:search {"label":"Search","showLabel":false,"placeholder":"Search site","widthUnit":"%","buttonText":"Search"} /-->
 				</div>
 				<!-- /wp:group -->
 			</div>
 			<!-- /wp:column -->
 
-			<!-- wp:column {"width":"0px"} -->
-			<div class="wp-block-column" style="flex-basis:0px">
+			<!-- wp:column {"layout":{"type":"default"}} -->
+			<div class="wp-block-column">
 				<!-- wp:spacer {"height":"var:preset|spacing|40"} -->
 				<div style="height:var(--wp--preset--spacing--40)" aria-hidden="true" class="wp-block-spacer"></div>
 				<!-- /wp:spacer -->

@@ -702,6 +702,73 @@
 					"fontSize": "var:preset|font-size|x-large",
 					"fontWeight": "700"
 				}
+			},
+			"core/avatar": {
+				"border": {
+					"radius": {
+						"topLeft": "var:preset|border-radius|20",
+						"topRight": "var:preset|border-radius|20",
+						"bottomLeft": "var:preset|border-radius|20",
+						"bottomRight": "var:preset|border-radius|20"
+					}
+				}
+			},
+			"core/comment-author-name": {
+				"typography": {
+					"fontWeight": "500"
+				},
+				"elements": {
+					"link": {
+						"typography": {
+							"textDecoration": "none"
+						},
+						":hover": {
+							"typography": {
+								"textDecoration": "underline"
+							}
+						}
+					}
+				}
+			},
+			"core/comment-date": {
+				"typography": {
+					"fontWeight": "300"
+				},
+				"color": {
+					"text": "var:preset|color|grey-800"
+				},
+				"elements": {
+					"link": {
+						"typography": {
+							"textDecoration": "none"
+						},
+						"color": {
+							"text": "currentColor"
+						},
+						":hover": {
+							"typography": {
+								"textDecoration": "underline"
+							},
+							"color": {
+								"text": "var:preset|color|primary"
+							}
+						}
+					}
+				}
+			},
+			"core/navigation": {
+				"elements": {
+					"link": {
+						":hover": {
+							"typography": {
+								"textDecoration": "underline"
+							}
+						},
+						"typography": {
+							"textDecoration": "none"
+						}
+					}
+				}
 			}
 		}
 	},
