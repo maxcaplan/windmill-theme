@@ -10,13 +10,19 @@
 			padding-bottom: var(--wp--preset--spacing--60);
 		"
 	>
+		<!-- wp:post-terms {"term":"category","style":{"typography":{"fontStyle":"normal","fontWeight":"500"}}} /-->
+
 		<!-- wp:post-title {"level":1} /-->
+
+		<!-- wp:pattern {"slug":"windmill-theme/hidden-post-date"} /-->
+
+		<!-- wp:pattern {"slug":"windmill-theme/hidden-post-excerpt"} /-->
 
 		<!-- wp:post-featured-image {"aspectRatio":"3/2"} /-->
 
 		<!-- wp:pattern {"slug":"windmill-theme/hidden-written-by"} /-->
 
-		<!-- wp:post-content {"align":"wide","layout":{"type":"constrained"}} /-->
+		<!-- wp:post-content {"align":"wide","style":{"spacing":{"margin":{"top":"var:preset|spacing|70"}}},"layout":{"type":"constrained"}} /-->
 
 		<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"layout":{"type":"flex","flexWrap":"wrap"}} -->
 		<div
@@ -26,11 +32,7 @@
 				padding-bottom: var(--wp--preset--spacing--60);
 			"
 		>
-			<!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}}} -->
-			<p style="font-style: normal; font-weight: 700">Tags:</p>
-			<!-- /wp:paragraph -->
-
-			<!-- wp:post-terms {"term":"post_tag","separator":"  ","className":"is-style-post-terms-1"} /-->
+			<!-- wp:post-terms {"term":"post_tag","separator":"  ","prefix":"\u003cstrong\u003eTags:\u003c/strong\u003e ","className":"is-style-post-terms-1"} /-->
 		</div>
 		<!-- /wp:group -->
 

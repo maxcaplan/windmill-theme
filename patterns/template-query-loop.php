@@ -18,11 +18,19 @@
 		<div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--60);padding-right:0;padding-bottom:var(--wp--preset--spacing--60);padding-left:0;">
 			<!-- wp:post-featured-image {"aspectRatio":"3/2"} /-->
 
-			<!-- wp:post-title {"isLink":true,"fontSize":"x-large"} /-->
+			<!-- wp:post-terms {"term":"category","style":{"typography":{"fontStyle":"normal","fontWeight":"500"}}} /-->
 
-			<!-- wp:post-date {"isLink":true,"style":{"spacing":{"margin":{"top":"var:preset|spacing|40"}}},"fontSize":"small"} /-->
+			<!-- wp:post-title {"isLink":true} /-->
 
-			<!-- wp:post-excerpt {"moreText":"<?php echo esc_html_x( 'Read more', 'Read more text', 'windmill-theme' ); ?>","fontSize":"medium"} /-->
+			<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|40","margin":{"top":"var:preset|spacing|40"}}},"textColor":"contrast-secondary","fontSize":"small","layout":{"type":"flex","flexWrap":"wrap"}} -->
+			<div class="wp-block-group has-contrast-secondary-color has-text-color has-small-font-size" style="margin-top:var(--wp--preset--spacing--40)">
+				<!-- wp:post-author-name {"isLink":true} /-->
+
+				<!-- wp:post-date {"isLink":true,"metadata":{"bindings":{"datetime":{"source":"core/post-data","args":{"field":"date"}}}}} /-->
+			</div>
+			<!-- /wp:group -->
+
+			<!-- wp:post-excerpt {"moreText":"<?php echo esc_html_x( '\u003cstrong\u003eRead more\u003c/strong\u003e', 'Bolded read more text', 'windmill-theme' ); ?>","fontSize":"medium"} /-->
 		</div>
 		<!-- /wp:group -->
 	<!-- /wp:post-template -->
