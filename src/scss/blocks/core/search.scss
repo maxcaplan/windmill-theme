@@ -1,0 +1,8 @@
+.wp-block-search {
+	/** Border radius of search block used to set border radius of it's input and button element */
+	.wp-block-search__inside-wrapper,
+	.wp-block-search__input,
+	.wp-block-search__button {
+		border-radius: inherit;
+	}
+}

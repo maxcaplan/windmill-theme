@@ -1,0 +1,9 @@
+.wp-block-comment-template {
+	/** Ensure comment content does not overflow flex container */
+	.comment .is-layout-flex.wp-block-group:has(> .wp-block-comment-content) {
+		min-width: 0;
+	}
+	.comment .is-layout-flex.wp-block-group > .wp-block-comment-content {
+		width: 100%;
+	}
+}

@@ -1,0 +1,48 @@
+/** Help prevent overflow of long words/names/URLs */
+p,
+li {
+	overflow-wrap: break-word;
+	hyphens: auto;
+}
+
+/*
+ * Progressive enhancement to reduce widows and orphans
+ * https://github.com/WordPress/gutenberg/issues/55190
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote,
+caption,
+figcaption,
+p {
+	text-wrap: pretty;
+}
+
+/*
+ * Link styles
+ * https://github.com/WordPress/gutenberg/issues/42319
+ */
+a {
+	text-decoration-thickness: 1px !important;
+	text-underline-offset: 0.1em;
+}
+
+/*
+ * Prevents unnecessary scrollbars while handling long lines of preformatted text.
+ * https://core.trac.wordpress.org/ticket/63875
+ */
+:where(pre) {
+	overflow-x: auto;
+}
+
+/*
+ * Adjust drop cap size and match paragraphs weight
+ */
+.has-drop-cap:not(:focus):first-letter {
+	font-size: 4.236em;
+	font-weight: inherit;
+}

@@ -1,0 +1,7 @@
+.wp-block-post-author {
+	/** Set author byline and bio font size relative to author name */
+	.wp-block-post-author__content .wp-block-post-author__byline,
+	.wp-block-post-author__content .wp-block-post-author__bio {
+		font-size: 0.887em;
+	}
+}
