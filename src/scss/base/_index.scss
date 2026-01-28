@@ -3,6 +3,7 @@
  */
 
 @use "typography";
+@use "forms";
 
 /* Focus styles */
 :where(.wp-site-blocks *:focus) {

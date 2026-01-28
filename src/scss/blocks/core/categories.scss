@@ -1,0 +1,7 @@
+.wp-block-categories {
+	/** Set categories dropdown select element border radius to blocks */
+	&.wp-block-categories-dropdown select {
+		border-radius: inherit;
+		width: 100%;
+	}
+}

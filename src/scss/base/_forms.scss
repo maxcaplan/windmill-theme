@@ -1,0 +1,40 @@
+/**
+ * Form and input element styles
+ */
+
+input,
+input {
+	padding: var(--wp--preset--spacing--40);
+	font-size: inherit;
+	border-radius: var(--wp--preset--spacing--20);
+	border: 1px var(--wp--preset--color--contrast) solid;
+	background-color: inherit;
+	color: inherit;
+}
+
+select {
+	padding: var(--wp--preset--spacing--40);
+	font-size: inherit;
+	border-radius: var(--wp--preset--spacing--20);
+	border: 1px var(--wp--preset--color--contrast) solid;
+	background-color: inherit;
+	color: inherit;
+
+	/**
+	 * Opt in to custom styling for select element (experimental)
+	 * https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/::picker#basic_custom_select_usage
+	 */
+	&,
+	::picker(select) {
+		appearance: base-select;
+	}
+
+	/** Set custom picker icon for select element (experimental) */
+	&::picker-icon {
+		color: currentColor;
+		content: "⌄";
+	}
+	&:open::picker-icon {
+		rotate: 180deg;
+	}
+}

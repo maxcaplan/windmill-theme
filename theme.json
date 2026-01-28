@@ -775,6 +775,16 @@
 				"typography": {
 					"fontSize": "var:preset|font-size|large"
 				}
+			},
+			"core/categories": {
+				"border": {
+					"radius": {
+						"topLeft": "var:preset|border-radius|20",
+						"topRight": "var:preset|border-radius|20",
+						"bottomLeft": "var:preset|border-radius|20",
+						"bottomRight": "var:preset|border-radius|20"
+					}
+				}
 			}
 		}
 	},
