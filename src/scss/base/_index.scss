@@ -40,3 +40,23 @@
 .more-link {
 	display: block;
 }
+
+/* Make template parts sticky if they have a direct child that is sticky */
+.wp-block-template-part:has(> .is-position-sticky) {
+	position: sticky;
+	top: calc(0px + var(--wp-admin--admin-bar--position-offset, 0px));
+	z-index: 20;
+
+	html :where(&) {
+		--wp-admin--admin-bar--position-offset: var(
+			--wp-admin--admin-bar--height,
+			0px
+		);
+	}
+
+	@media screen and (max-width: 600px) {
+		html :where(&) {
+			--wp-admin--admin-bar--position-offset: 0px;
+		}
+	}
+}
