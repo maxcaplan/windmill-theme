@@ -623,7 +623,7 @@
 			"button": {
 				"color": {
 					"text": "var:preset|color|base",
-					"background": "var:preset|color|primary"
+					"background": "var:preset|color|secondary"
 				},
 				"typography": {
 					"fontWeight": "500"
@@ -657,7 +657,7 @@
 			"core/button": {
 				"color": {
 					"text": "var:preset|color|base",
-					"background": "var:preset|color|primary"
+					"background": "var:preset|color|secondary"
 				},
 				"typography": {
 					"fontWeight": "500"
