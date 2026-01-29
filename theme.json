@@ -650,8 +650,7 @@
 			"core/site-title": {
 				"typography": {
 					"fontFamily": "var:preset|font-family|fira-code",
-					"fontSize": "var:preset|font-size|x-large",
-					"fontWeight": "700"
+					"fontSize": "var:preset|font-size|x-large"
 				}
 			},
 			"core/button": {
