@@ -36,7 +36,7 @@
 					<div class="wp-block-group">
 						<!-- wp:comment-author-name {"style":{"spacing":{"margin":{"right":"var:preset|spacing|40"}}}} /-->
 
-						<!-- wp:comment-date {"style":{"elements":{"link":{"color":{"text":"var:preset|color|grey-600"}}}},"textColor":"grey-600","fontSize":"small"} /-->
+						<!-- wp:comment-date {"style":{"elements":{"link":{"color":{"text":"var:preset|color|contrast-secondary"}}}},"textColor":"contrast-secondary","fontSize":"small"} /-->
 					</div>
 					<!-- /wp:group -->
 

@@ -91,144 +91,149 @@
 					"slug": "contrast-secondary"
 				},
 				{
+					"name": "Outline",
+					"color": "hsl(0 0% 0% / 40%)",
+					"slug": "outline"
+				},
+				{
 					"name": "Primary",
-					"color": "#1976d2",
+					"color": "#5a58c6",
 					"slug": "primary"
 				},
 				{
 					"name": "Primary Light",
-					"color": "#42a5f5",
+					"color": "#8c8ad7",
 					"slug": "primary-light"
 				},
 				{
 					"name": "Primary Dark",
-					"color": "#1565c0",
+					"color": "#3f3e8b",
 					"slug": "primary-dark"
 				},
 				{
 					"name": "Secondary",
-					"color": "#9c27b0",
+					"color": "#9158c6",
 					"slug": "secondary"
 				},
 				{
 					"name": "Secondary Light",
-					"color": "#ba68c8",
+					"color": "#b28ad7",
 					"slug": "secondary-light"
 				},
 				{
 					"name": "Secondary Dark",
-					"color": "#7b1fa2",
+					"color": "#663e8b",
 					"slug": "secondary-dark"
 				},
 				{
 					"name": "Error",
-					"color": "#d32f2f",
+					"color": "#d73c51",
 					"slug": "error"
 				},
 				{
 					"name": "Error Light",
-					"color": "#ef5350",
+					"color": "#e37785",
 					"slug": "error-light"
 				},
 				{
 					"name": "Error Dark",
-					"color": "#c62828",
+					"color": "#ac3041",
 					"slug": "error-dark"
 				},
 				{
 					"name": "Info",
-					"color": "#0288d1",
+					"color": "#027abb",
 					"slug": "info"
 				},
 				{
 					"name": "Info Light",
-					"color": "#03a9f4",
+					"color": "#4ea2cf",
 					"slug": "info-light"
 				},
 				{
 					"name": "Info Dark",
-					"color": "#01579b",
+					"color": "#026296",
 					"slug": "info-dark"
 				},
 				{
 					"name": "Success",
-					"color": "#2e7d32",
+					"color": "#02836f",
 					"slug": "success"
 				},
 				{
 					"name": "Success Light",
-					"color": "#4caf50",
+					"color": "#4ea89a",
 					"slug": "success-light"
 				},
 				{
 					"name": "Success Dark",
-					"color": "#1b5e20",
+					"color": "#026959",
 					"slug": "success-dark"
 				},
 				{
 					"name": "Warning",
-					"color": "#ed6c02",
+					"color": "#fcba04",
 					"slug": "warning"
 				},
 				{
 					"name": "Warning Light",
-					"color": "#ff9800",
+					"color": "#fdd668",
 					"slug": "warning-light"
 				},
 				{
 					"name": "Warning Dark",
-					"color": "#e65100",
+					"color": "#b08203",
 					"slug": "warning-dark"
 				},
 				{
-					"name": "Grey 50",
-					"slug": "grey-50",
-					"color": "#fafafa"
+					"name": "Surface 50",
+					"slug": "surface-50",
+					"color": "#e8e8e9"
 				},
 				{
-					"name": "Grey 100",
-					"slug": "grey-100",
-					"color": "#f5f5f5"
+					"name": "Surface 100",
+					"slug": "surface-100",
+					"color": "#d1d1d2"
 				},
 				{
-					"name": "Grey 200",
-					"slug": "grey-200",
-					"color": "#eeeeee"
+					"name": "Surface 200",
+					"slug": "surface-200",
+					"color": "#bababc"
 				},
 				{
-					"name": "Grey 300",
-					"slug": "grey-300",
-					"color": "#e0e0e0"
+					"name": "Surface 300",
+					"slug": "surface-300",
+					"color": "#a3a3a5"
 				},
 				{
-					"name": "Grey 400",
-					"slug": "grey-400",
-					"color": "#bdbdbd"
+					"name": "Surface 400",
+					"slug": "surface-400",
+					"color": "#8d8d8f"
 				},
 				{
-					"name": "Grey 500",
-					"slug": "grey-500",
-					"color": "#9e9e9e"
+					"name": "Surface 500",
+					"slug": "surface-500",
+					"color": "#767679"
 				},
 				{
-					"name": "Grey 600",
-					"slug": "grey-600",
-					"color": "#757575"
+					"name": "Surface 600",
+					"slug": "surface-600",
+					"color": "#5f5f62"
 				},
 				{
-					"name": "Grey 700",
-					"slug": "grey-700",
-					"color": "#616161"
+					"name": "Surface 700",
+					"slug": "surface-700",
+					"color": "#48484c"
 				},
 				{
-					"name": "Grey 800",
-					"slug": "grey-800",
-					"color": "#424242"
+					"name": "Surface 800",
+					"slug": "surface-800",
+					"color": "#313135"
 				},
 				{
-					"name": "Grey 900",
-					"slug": "grey-900",
-					"color": "#212121"
+					"name": "Surface 900",
+					"slug": "surface-900",
+					"color": "#1a1a1f"
 				}
 			],
 			"text": true,
@@ -617,6 +622,7 @@
 			},
 			"button": {
 				"color": {
+					"text": "var:preset|color|base",
 					"background": "var:preset|color|primary"
 				},
 				"typography": {
@@ -650,6 +656,7 @@
 			},
 			"core/button": {
 				"color": {
+					"text": "var:preset|color|base",
 					"background": "var:preset|color|primary"
 				},
 				"typography": {
@@ -769,6 +776,12 @@
 							"textDecoration": "none"
 						}
 					}
+				}
+			},
+			"core/navigation-submenu": {
+				"color": {
+					"text": "var:preset|color|contrast",
+					"background": "var:preset|color|base"
 				}
 			},
 			"core/pullquote": {

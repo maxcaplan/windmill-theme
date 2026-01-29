@@ -1,0 +1,8 @@
+.wp-block-navigation {
+	.wp-block-navigation__responsive-container.is-menu-open {
+		padding-top: var(--wp--style--root--padding-top);
+		padding-bottom: var(--wp--style--root--padding-bottom);
+		padding-left: var(--wp--style--root--padding-left);
+		padding-right: var(--wp--style--root--padding-right);
+	}
+}

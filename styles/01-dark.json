@@ -1,0 +1,171 @@
+{
+	"$schema": "https://schemas.wp.org/wp/6.9/theme.json",
+	"version": 3,
+	"title": "Dark",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"name": "Base",
+					"color": "#1a1a1f",
+					"slug": "base"
+				},
+				{
+					"name": "Contrast",
+					"color": "#e4e1eb",
+					"slug": "contrast"
+				},
+				{
+					"name": "Contrast Secondary",
+					"color": "#c7c4d5",
+					"slug": "contrast-secondary"
+				},
+				{
+					"name": "Outline",
+					"color": "#918f9e",
+					"slug": "outline"
+				},
+				{
+					"name": "Primary",
+					"color": "#9c9bdd",
+					"slug": "primary"
+				},
+				{
+					"name": "Primary Light",
+					"color": "#cecdee",
+					"slug": "primary-light"
+				},
+				{
+					"name": "Primary Dark",
+					"color": "#7b79d1",
+					"slug": "primary-dark"
+				},
+				{
+					"name": "Secondary",
+					"color": "#bd9bdd",
+					"slug": "secondary"
+				},
+				{
+					"name": "Secondary Light",
+					"color": "#d3bce8",
+					"slug": "secondary-light"
+				},
+				{
+					"name": "Secondary Dark",
+					"color": "#9c69cc",
+					"slug": "secondary-dark"
+				},
+				{
+					"name": "Error",
+					"color": "#eb9ea8",
+					"slug": "error"
+				},
+				{
+					"name": "Error Light",
+					"color": "#f3c5cb",
+					"slug": "error-light"
+				},
+				{
+					"name": "Error Dark",
+					"color": "#df6374",
+					"slug": "error-dark"
+				},
+				{
+					"name": "Info",
+					"color": "#81bddd",
+					"slug": "info"
+				},
+				{
+					"name": "Info Light",
+					"color": "#b3d7eb",
+					"slug": "info-light"
+				},
+				{
+					"name": "Info Dark",
+					"color": "#3595c9",
+					"slug": "info-dark"
+				},
+				{
+					"name": "Success",
+					"color": "#81c1b7",
+					"slug": "success"
+				},
+				{
+					"name": "Success Light",
+					"color": "#9acdc5",
+					"slug": "success-light"
+				},
+				{
+					"name": "Success Dark",
+					"color": "#359c8c",
+					"slug": "success-dark"
+				},
+				{
+					"name": "Warning",
+					"color": "#fdd668",
+					"slug": "warning"
+				},
+				{
+					"name": "Warning Light",
+					"color": "#fee39b",
+					"slug": "warning-light"
+				},
+				{
+					"name": "Warning Dark",
+					"color": "#fcc11d",
+					"slug": "warning-dark"
+				},
+				{
+					"name": "Surface 50",
+					"slug": "surface-50",
+					"color": "#1a1a1f"
+				},
+				{
+					"name": "Surface 100",
+					"slug": "surface-100",
+					"color": "#313135"
+				},
+				{
+					"name": "Surface 200",
+					"slug": "surface-200",
+					"color": "#48484c"
+				},
+				{
+					"name": "Surface 300",
+					"slug": "surface-300",
+					"color": "#5f5f62"
+				},
+				{
+					"name": "Surface 400",
+					"slug": "surface-400",
+					"color": "#767679"
+				},
+				{
+					"name": "Surface 500",
+					"slug": "surface-500",
+					"color": "#8d8d8f"
+				},
+				{
+					"name": "Surface 600",
+					"slug": "surface-600",
+					"color": "#a3a3a5"
+				},
+				{
+					"name": "Surface 700",
+					"slug": "surface-700",
+					"color": "#bababc"
+				},
+				{
+					"name": "Surface 800",
+					"slug": "surface-800",
+					"color": "#d1d1d2"
+				},
+				{
+					"name": "Surface 900",
+					"slug": "surface-900",
+					"color": "#fafafa"
+				}
+			]
+		}
+	}
+}
