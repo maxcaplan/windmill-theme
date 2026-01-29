@@ -1,5 +1,11 @@
 .wp-block-categories {
-	/** Set categories dropdown select element border radius to blocks */
+	/* Prevent overflow for dropdown label */
+	&.wp-block-categories-dropdown {
+		position: relative;
+		width: 100%;
+	}
+
+	/* Set categories dropdown select element border radius to blocks */
 	&.wp-block-categories-dropdown select {
 		border-radius: inherit;
 		width: 100%;
