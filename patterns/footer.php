@@ -45,7 +45,7 @@
 
 			<!-- wp:column {"layout":{"type":"default"}} -->
 			<div class="wp-block-column">
-				<!-- wp:navigation {"ref":4,"overlayMenu":"never","overlayBackgroundColor":"base","overlayTextColor":"contrast","style":{"layout":{"selfStretch":"fill","flexSize":null}},"layout":{"type":"flex","justifyContent":"right","flexWrap":"wrap","orientation":"vertical"}} /-->
+				<!-- wp:navigation {"overlayMenu":"never","overlayBackgroundColor":"base","overlayTextColor":"contrast","style":{"layout":{"selfStretch":"fill","flexSize":null}},"layout":{"type":"flex","justifyContent":"right","flexWrap":"wrap","orientation":"vertical"}} /-->
 			</div>
 			<!-- /wp:column -->
 		</div>
