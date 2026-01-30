@@ -30,7 +30,7 @@
 			</div>
 			<!-- /wp:group -->
 
-			<!-- wp:post-excerpt {"moreText":"<?php echo esc_html_x( '\u003cstrong\u003eRead more\u003c/strong\u003e', 'Bolded read more text', 'windmill-theme' ); ?>","fontSize":"medium"} /-->
+			<!-- wp:post-excerpt {"moreText":"<?php echo esc_html_x( '\u003cstrong\u003eRead more\u003c/strong\u003e', 'Bolded read more text', 'windmill-theme' ); ?>"} /-->
 		</div>
 		<!-- /wp:group -->
 	<!-- /wp:post-template -->

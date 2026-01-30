@@ -16,13 +16,13 @@
 <div class="wp-block-group">
 	<!-- wp:comments {"className":"wp-block-comments-query-loop","style":{"spacing":{"margin":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70"}}}} -->
 	<div class="wp-block-comments wp-block-comments-query-loop" style="margin-top:var(--wp--preset--spacing--70);margin-bottom:var(--wp--preset--spacing--70)">
-		<!-- wp:heading {"fontSize":"x-large"} -->
-		<h2 class="wp-block-heading has-x-large-font-size">
+		<!-- wp:heading -->
+		<h2 class="wp-block-heading">
 			<?php esc_html_e( 'Comments', 'windmill-theme' ); ?>
 		</h2>
 		<!-- /wp:heading -->
 
-		<!-- wp:comments-title {"level":3,"fontSize":"large"} /-->
+		<!-- wp:comments-title {"level":3} /-->
 
 
 		<!-- wp:comment-template -->

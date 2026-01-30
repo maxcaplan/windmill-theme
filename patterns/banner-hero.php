@@ -31,17 +31,22 @@
 		</h1>
 		<!-- /wp:heading -->
 
-		<!-- wp:paragraph {"fontSize":"large"} -->
-		<p class="has-large-font-size">
-			<?php
-			printf(
-				/* translators: %s is the brand name, e.g., 'Fleurs'. */
-				esc_html_x( 'We\'re %s, our mission is to deliver exquisite flower arrangements that not only adorn living spaces but also inspire a deeper appreciation for natural beauty.', 'Pattern placeholder text.', 'windmill-theme' ),
-				'<strong>' . esc_html_x( 'Fleurs', 'Example brand name.', 'windmill-theme' ) . '</strong>'
-			);
-			?>
-		</p>
-		<!-- /wp:paragraph -->
+
+		<!-- wp:group {"layout":{"type":"constrained","justifyContent":"left"}} -->
+		<div class="wp-block-group">
+			<!-- wp:paragraph -->
+			<p>
+				<?php
+				printf(
+					/* translators: %s is the brand name, e.g., 'Fleurs'. */
+					esc_html_x( 'We\'re %s, our mission is to deliver exquisite flower arrangements that not only adorn living spaces but also inspire a deeper appreciation for natural beauty.', 'Pattern placeholder text.', 'windmill-theme' ),
+					'<strong>' . esc_html_x( 'Fleurs', 'Example brand name.', 'windmill-theme' ) . '</strong>'
+				);
+				?>
+			</p>
+			<!-- /wp:paragraph -->
+		</div>
+		<!-- /wp:group -->
 
 		<!-- wp:buttons -->
 		<div class="wp-block-buttons">
