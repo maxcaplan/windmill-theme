@@ -877,20 +877,6 @@
 					}
 				}
 			},
-			"core/navigation": {
-				"elements": {
-					"link": {
-						":hover": {
-							"typography": {
-								"textDecoration": "underline"
-							}
-						},
-						"typography": {
-							"textDecoration": "none"
-						}
-					}
-				}
-			},
 			"core/navigation-submenu": {
 				"color": {
 					"text": "var:preset|color|contrast",
