@@ -1,13 +1,9 @@
 .wp-block-categories {
-	/* Prevent overflow for dropdown label */
-	&.wp-block-categories-dropdown {
-		position: relative;
-		width: 100%;
-	}
+	/* Allow select element to inherit border radius from categories block */
+	border-radius: inherit;
 
-	/* Set categories dropdown select element border radius to blocks */
-	&.wp-block-categories-dropdown select {
-		border-radius: inherit;
-		width: 100%;
+	&.wp-block-categories-dropdown {
+		/* Prevent overflow for dropdown label */
+		position: relative;
 	}
 }

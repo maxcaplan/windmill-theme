@@ -1,13 +1,11 @@
 .wp-block-post-comments-form {
-	/** Border radius of comment form block used to set border radius of it's text-area and button element */
+	/* Allow text area, input, and button elements border radius to be inherited from comment form block */
 	.comment-form,
-	.comment-form .comment-form-comment,
-	.comment-form .comment-form-comment textarea,
-	.form-submit,
-	.form-submit .wp-element-button {
+	.comment-form > * {
 		border-radius: inherit;
 	}
 
+	/* Disable resizing for form textarea (experimental) */
 	.comment-form .comment-form-comment textarea {
 		resize: none;
 	}
