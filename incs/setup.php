@@ -47,8 +47,5 @@ function setup_theme() {
 
 	// Set themes supported features.
 	setup_theme_supports();
-
-	// Add editor styles.
-	add_editor_style( 'assets/css/editor-styles.css' );
 }
 add_action( 'after_setup_theme', __NAMESPACE__ . '\setup_theme' );

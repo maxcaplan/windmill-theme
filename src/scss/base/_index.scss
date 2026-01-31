@@ -2,8 +2,8 @@
  * Global styles
  */
 
-@use "typography";
-@use "forms";
+@forward "typography";
+@forward "forms";
 
 /* Focus styles */
 :where(.wp-site-blocks *:focus) {
