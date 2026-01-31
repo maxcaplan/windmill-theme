@@ -62,7 +62,18 @@ add_action( 'enqueue_block_editor_assets', __NAMESPACE__ . '\enqueue_editor_scri
 /**
  * Enqueue editor styles hook
  */
-function enqueue_editor_styles() {
-	add_editor_style( 'build/css/editor.css' );
+function enqueue_editor_content_styles() {
+	if ( ! is_admin() ) {
+		return;
+	}
+
+	$asset_meta = include get_template_directory() . '/build/css/editor.asset.php';
+
+	wp_enqueue_style(
+		'windmill-theme-editor-content-style',
+		get_parent_theme_file_uri( 'build/css/editor.css' ),
+		$asset_meta['dependencies'],
+		$asset_meta['version']
+	);
 }
-add_action( 'after_setup_theme', __NAMESPACE__ . '\enqueue_editor_styles' );
+add_action( 'enqueue_block_assets', __NAMESPACE__ . '\enqueue_editor_content_styles' );

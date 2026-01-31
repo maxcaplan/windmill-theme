@@ -2,20 +2,25 @@
  * Theme editor styles
  */
 
-// Third-party styles
-@use "vendors";
+@use "sass:meta";
 
-// Variables, mixins, and functions
-@use "abstract";
+/* Editor content styles */
+.editor-styles-wrapper {
+	// Third-party styles
+	@include meta.load-css("vendors");
 
-// Global styles
-@use "base";
+	// Variables, mixins, and functions
+	@include meta.load-css("abstract");
 
-// Layout styles
-@use "layout";
+	// Global styles
+	@include meta.load-css("base");
 
-// Component styles
-@use "components";
+	// Layout styles
+	@include meta.load-css("layout");
 
-// Block styles
-@use "blocks";
+	// Component styles
+	@include meta.load-css("components");
+
+	// Block styles
+	@include meta.load-css("blocks");
+}
