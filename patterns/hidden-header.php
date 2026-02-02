@@ -1,10 +1,8 @@
 <?php
 /**
  * Title: Header
- * Slug: windmill-theme/header
- * Categories: header
- * Block Types: core/template-part/header
- * Description: Site header with site title and navigation.
+ * Slug: windmill-theme/hidden-header
+ * Inserter: no
  *
  * @package WindmillTheme
  */

@@ -1,10 +1,8 @@
 <?php
 /**
  * Title: More posts
- * Description: Displays a list of posts with title and date.
- * Slug: windmill-theme/more-posts
- * Categories: query
- * Block Types: core/query
+ * Slug: windmill-theme/hidden-more-posts
+ * Inserter: no
  *
  * @package WindmillTheme
  */

@@ -1,9 +1,8 @@
 <?php
 /**
  * Title: Hero Banner
- * Description: A hero section banner with a large heading, subheading, and buttons.
- * Slug: windmill-theme/banner-hero
- * Categories: banner, about, featured
+ * Slug: windmill-theme/hidden-banner
+ * Inserter: no
  *
  * @package WindmillTheme
  */

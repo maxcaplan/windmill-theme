@@ -1,10 +1,8 @@
 <?php
 /**
  * Title: Comments
- * Description: Comments area with comments list, pagination, and comment form.
- * Slug: windmill-theme/comments
- * Categories: text
- * Block Types: core/comments
+ * Slug: windmill-theme/hidden-comments
+ * Inserter: no
  *
  * @package WindmillTheme
  */

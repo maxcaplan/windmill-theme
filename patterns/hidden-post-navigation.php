@@ -1,10 +1,8 @@
 <?php
 /**
  * Title: Post navigation
- * Description: Next and previous post links.
- * Slug: windmill-theme/post-navigation
- * Categories: text
- * Block Types: core/post-navigation-link
+ * Slug: windmill-theme/hidden-post-navigation
+ * Inserter: no
  *
  * @package WindmillTheme
  */

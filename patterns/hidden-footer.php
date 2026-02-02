@@ -1,10 +1,8 @@
 <?php
 /**
  * Title: Footer
- * Slug: windmill-theme/footer
- * Categories: footer
- * Block Types: core/template-part/footer
- * Description: Footer columns with logo, title, tagline and links.
+ * Slug: windmill-theme/hidden-footer
+ * Inserter: no
  *
  * @package WindmillTheme
  */
