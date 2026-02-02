@@ -2,6 +2,7 @@
 	"$schema": "https://getcomposer.org/schema.json",
 	"name": "windmill/windmill-theme",
 	"description": "An extensible WordPress theme for developers and designers",
+	"version": "0.1.0",
 	"type": "wordpress-theme",
 	"license": "GPL-3.0",
 	"autoload": {

@@ -4,6 +4,11 @@
 
 @use "sass:meta";
 
+/* Ensure sticky positioned blocks stay on top in editor */
+html :where(.editor-styles-wrapper) {
+	--wt--style--sticky--z-index: 30;
+}
+
 /* Editor content styles */
 .editor-styles-wrapper {
 	// Third-party styles
