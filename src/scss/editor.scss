@@ -25,7 +25,4 @@ html :where(.editor-styles-wrapper) {
 
 	// Component styles
 	@include meta.load-css("components");
-
-	// Block styles
-	@include meta.load-css("blocks");
 }
